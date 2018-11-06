@@ -1,19 +1,19 @@
-
 # react-native-lotame
+
+> **NOTE for iOS**
+> If being added to an Objective c project. After installation. Add a dummy swift file and bridging header file (Xcode should suggest adding it). This is just to let Xcode link swift libraries while building the framework.
 
 ## Getting started
 
 `$ npm install react-native-lotame --save`
-
-### Important
-If being added to an Objective c project. After installation. Add a dummy swift file and bridging header file (Xcode should suggest adding it). This is just to let Xcode link swift libraries while building the framework.
+or
+`$ yarn add react-native-lotame`
 
 ### Mostly automatic installation
 
 `$ react-native link react-native-lotame`
 
 ### Manual installation
-
 
 #### iOS
 
@@ -25,32 +25,25 @@ If being added to an Objective c project. After installation. Add a dummy swift 
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNLotamePackage;` to the imports at the top of the file
-  - Add `new RNLotamePackage()` to the list returned by the `getPackages()` method
+
+- Add `import com.shukerullah.lotame.RNLotamePackage;` to the imports at the top of the file
+- Add `new RNLotamePackage()` to the list returned by the `getPackages()` method
+
 2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-lotame'
-  	project(':react-native-lotame').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-lotame/android')
-  	```
+   ```
+   include ':react-native-lotame'
+   project(':react-native-lotame').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-lotame/android')
+   ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-lotame')
-  	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNLotame.sln` in `node_modules/react-native-lotame/windows/RNLotame.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Lotame.RNLotame;` to the usings at the top of the file
-  - Add `new RNLotamePackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
+   ```
+     compile project(':react-native-lotame')
+   ```
 
 ## Usage
+
 ```javascript
-import RNLotame from 'react-native-lotame';
+import RNLotame from "react-native-lotame";
 
 // TODO: What to do with the module?
 RNLotame;
 ```
-  
