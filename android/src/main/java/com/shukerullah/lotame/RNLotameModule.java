@@ -29,28 +29,44 @@ public class RNLotameModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void initialize(int clientID, String domain) {
-    ccHttp = new CrowdControl(reactContext, clientID, Protocol.HTTP, domain);
+  public void initialize(int clientID) {
+    try {
+      ccHttp = new CrowdControl(reactContext, clientID, Protocol.HTTP);
+    } catch(Exception e) {
+      System.out.println("Error " + e.getMessage());
+    }
   }
 
   @ReactMethod
   public void startSession() {
-    ccHttp.startSession();
+    try {
+      ccHttp.startSession();
+    } catch(Exception e) {
+      System.out.println("Error " + e.getMessage());
+    }
   }
 
   @ReactMethod
   public void addBehaviorData(String type, String value) {
-    ccHttp.add(type,value);
+    try {
+      ccHttp.add(type,value);
+    } catch(Exception e) {
+      System.out.println("Error " + e.getMessage());
+    }
   }
 
   @ReactMethod
   public void sendBehaviorData() {
-    if (ccHttp.isInitialized()) {
-      try {
-        ccHttp.bcp();
-      } catch (IOException e) {
-        e.printStackTrace();
+    try {
+      if (ccHttp.isInitialized()) {
+        try {
+          ccHttp.bcp();
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
       }
+    } catch(Exception e) {
+      System.out.println("Error " + e.getMessage());
     }
   }
 }
