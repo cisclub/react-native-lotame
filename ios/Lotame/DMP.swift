@@ -74,7 +74,7 @@ open class DMP:NSObject{
     LotameDMP is a singleton.  Calls should be made to the class functions, which
     will use this sharedManager as an object.
     */
-    open static let sharedManager = DMP()
+    @objc public static let sharedManager = DMP()
     
     fileprivate static let sdkVersion = "4.1.0"
     
@@ -87,7 +87,7 @@ open class DMP:NSObject{
     /**
     Gets the IDFA or nil if it is not enabled.
     */
-    open static var advertisingId: String?{
+    public static var advertisingId: String?{
         if trackingEnabled{
             return ASIdentifierManager.shared().advertisingIdentifier.uuidString
         }else{
@@ -115,7 +115,7 @@ open class DMP:NSObject{
     /**
     Tracking is enabled only if advertising id is enabled on the user's device
     */
-    open static var trackingEnabled: Bool{
+    public static var trackingEnabled: Bool{
         return ASIdentifierManager.shared().isAdvertisingTrackingEnabled
     }
     
@@ -138,7 +138,7 @@ open class DMP:NSObject{
     /**
     The domain of the base urls for the network calls. Defaults to crwdcntrl.net
     */
-    open var domain: String = DMP.defaultDomain{
+    @objc open var domain: String = DMP.defaultDomain{
         didSet{
             DMP.startNewSession()
         }
@@ -179,7 +179,7 @@ open class DMP:NSObject{
     Call this first to initialize the singleton. Only needs to be called once.
     Starts a new session, sets the domain to default "crwdcntrl.net" and httpProtocol to default "https"
     **/
-    open class func initialize(_ clientId: String){
+    @objc open class func initialize(_ clientId: String){
         DMP.sharedManager.clientId = clientId
         DMP.sharedManager.domain = defaultDomain
         DMP.sharedManager.httpProtocol = defaultProtocol
@@ -189,7 +189,7 @@ open class DMP:NSObject{
     /**
     Starts a new page view session
     */
-    open class func startNewSession(){
+    @objc open class func startNewSession(){
         dispatchQueue.sync{
             sharedManager.isNewSession = true
         }
@@ -285,7 +285,7 @@ open class DMP:NSObject{
     /**
     Collects behavior data with any type and value
     */
-    open class func addBehaviorData(_ value: String?, forType key: String){
+    @objc open class func addBehaviorData(_ value: String?, forType key: String){
         if !key.isEmpty{
             dispatchQueue.async{
                 if DMP.trackingEnabled{
@@ -298,7 +298,7 @@ open class DMP:NSObject{
     /**
     Collects a specific behavior id
     */
-    open class func addBehaviorData(behaviorId: Int64){
+    @objc open class func addBehaviorData(behaviorId: Int64){
         addBehaviorData(behaviorId.description, forType:"b")
     }
     
@@ -306,7 +306,7 @@ open class DMP:NSObject{
     /**
     Collects a specific opportunity id
     */
-    open class func addBehaviorData(opportunityId: Int64){
+    @objc open class func addBehaviorData(opportunityId: Int64){
         addBehaviorData(opportunityId.description, forType:opportunityParamKey)
     }
     

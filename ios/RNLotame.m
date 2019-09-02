@@ -26,10 +26,6 @@ RCT_EXPORT_METHOD(sendBehaviorDataWithHandler: (RCTResponseSenderBlock)callback)
     }];
 }
 
-RCT_EXPORT_METHOD(sendBehaviorData) {
-    [DMP sendBehaviorData];
-}
-
 RCT_EXPORT_METHOD(addBehaviorData: (NSString *)value forTypeKey: (NSString *)key) {
     [DMP addBehaviorData:value forType:key];
 }
