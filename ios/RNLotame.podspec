@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "RNLotame"
   s.description  = <<-DESC
-                  RNLotame
+                  React Native Lotame
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://www.npmjs.com/package/react-native-lotame"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
