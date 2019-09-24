@@ -11,9 +11,8 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(initialize: (NSString *)clientID domain:(NSString *) domain) {
+RCT_EXPORT_METHOD(initialize: (NSString *)clientID) {
     [DMP initialize:clientID];
-    [DMP sharedManager].domain = domain;
 }
 
 RCT_EXPORT_METHOD(startNewSession) {
