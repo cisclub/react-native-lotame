@@ -1,8 +1,7 @@
+#import "Lotame.h"
 
-#import "RNLotame.h"
-#import "RNLotame-Swift.h"
 
-@implementation RNLotame
+@implementation Lotame
 
 - (dispatch_queue_t)methodQueue
 {
@@ -45,4 +44,3 @@ RCT_EXPORT_METHOD(getAudienceDataWithHandler: (RCTResponseSenderBlock)callback) 
 
 
 @end
-  

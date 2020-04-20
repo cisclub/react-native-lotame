@@ -1,6 +1,5 @@
-
 import { NativeModules } from 'react-native';
 
-const { RNLotame } = NativeModules;
+const { Lotame } = NativeModules;
 
-export default RNLotame;
+export default Lotame;

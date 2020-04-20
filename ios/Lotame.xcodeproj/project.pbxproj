@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNLotame.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNLotame.m */; };
-		CE4AEF122153C2E500DDE546 /* LotameProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AEF0D2153C2E400DDE546 /* LotameProfile.swift */; };
-		CE4AEF132153C2E500DDE546 /* LotameAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AEF0E2153C2E500DDE546 /* LotameAudience.swift */; };
-		CE4AEF142153C2E500DDE546 /* DMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AEF0F2153C2E500DDE546 /* DMP.swift */; };
-		CE4AEF152153C2E500DDE546 /* LotameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AEF102153C2E500DDE546 /* LotameError.swift */; };
-		CE4AEF162153C2E500DDE546 /* NSDictionary+rawString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AEF112153C2E500DDE546 /* NSDictionary+rawString.swift */; };
+		B3E7B58A1CC2AC0600A0062D /* Lotame.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Lotame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,14 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNLotame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNLotame.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNLotame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNLotame.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNLotame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLotame.m; sourceTree = "<group>"; };
-		CE4AEF0D2153C2E400DDE546 /* LotameProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotameProfile.swift; sourceTree = "<group>"; };
-		CE4AEF0E2153C2E500DDE546 /* LotameAudience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotameAudience.swift; sourceTree = "<group>"; };
-		CE4AEF0F2153C2E500DDE546 /* DMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMP.swift; sourceTree = "<group>"; };
-		CE4AEF102153C2E500DDE546 /* LotameError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotameError.swift; sourceTree = "<group>"; };
-		CE4AEF112153C2E500DDE546 /* NSDictionary+rawString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+rawString.swift"; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libLotame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLotame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* Lotame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lotame.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* Lotame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lotame.m; sourceTree = "<group>"; };
+		D2900A33244D5C3E0081132B /* Lotame */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lotame; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +43,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNLotame.a */,
+				134814201AA4EA6300B7C361 /* libLotame.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,31 +51,27 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				CE4AEF0C2153C2D400DDE546 /* Lotame */,
-				B3E7B5881CC2AC0600A0062D /* RNLotame.h */,
-				B3E7B5891CC2AC0600A0062D /* RNLotame.m */,
+				D2900A32244D5C280081132B /* Frameworks */,
+				B3E7B5881CC2AC0600A0062D /* Lotame.h */,
+				B3E7B5891CC2AC0600A0062D /* Lotame.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE4AEF0C2153C2D400DDE546 /* Lotame */ = {
+		D2900A32244D5C280081132B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE4AEF0F2153C2E500DDE546 /* DMP.swift */,
-				CE4AEF0E2153C2E500DDE546 /* LotameAudience.swift */,
-				CE4AEF102153C2E500DDE546 /* LotameError.swift */,
-				CE4AEF0D2153C2E400DDE546 /* LotameProfile.swift */,
-				CE4AEF112153C2E500DDE546 /* NSDictionary+rawString.swift */,
+				D2900A33244D5C3E0081132B /* Lotame */,
 			);
-			path = Lotame;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNLotame */ = {
+		58B511DA1A9E6C8500147676 /* Lotame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNLotame" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "Lotame" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -94,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = RNLotame;
+			name = Lotame;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNLotame.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libLotame.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -105,20 +92,20 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0940;
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNLotame" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "Lotame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -126,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNLotame */,
+				58B511DA1A9E6C8500147676 /* Lotame */,
 			);
 		};
 /* End PBXProject section */
@@ -136,12 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4AEF162153C2E500DDE546 /* NSDictionary+rawString.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* RNLotame.m in Sources */,
-				CE4AEF152153C2E500DDE546 /* LotameError.swift in Sources */,
-				CE4AEF142153C2E500DDE546 /* DMP.swift in Sources */,
-				CE4AEF132153C2E500DDE546 /* LotameAudience.swift in Sources */,
-				CE4AEF122153C2E500DDE546 /* LotameProfile.swift in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* Lotame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,14 +138,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -200,14 +188,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,46 +226,39 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNLotame;
+				PRODUCT_NAME = Lotame;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNLotame;
+				PRODUCT_NAME = Lotame;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNLotame" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "Lotame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -280,7 +267,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNLotame" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "Lotame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
