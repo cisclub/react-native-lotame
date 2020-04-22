@@ -1,4 +1,5 @@
 #import "Lotame.h"
+#import "react_native_lotame-Swift.h"
 
 
 @implementation Lotame
